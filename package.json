@@ -113,5 +113,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.1"
   }
 }
