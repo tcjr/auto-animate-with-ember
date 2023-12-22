@@ -1,0 +1,250 @@
+.accordion-example {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: block;
+    background-color: var(--ui-light);
+    border-radius: 0.5em;
+    overflow: hidden;
+  }
+
+  [data-dark-mode="true"] li {
+    background-color: var(--purple-d);
+  }
+
+  .question {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .question::before {
+    content: "Q";
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color: var(--primary);
+  }
+
+  [data-dark-mode="true"] .question::before {
+    color: var(--purple-m);
+  }
+
+  .answer {
+    margin: 0 1rem;
+    padding: 0 0 1rem;
+    font-size: 0.875em;
+  }
+}
+
+.boxes-example {
+  .boxes {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em -0.25em;
+  }
+
+  .box {
+    box-sizing: border-box;
+    width: calc(10% - 0.5em);
+    margin: 0.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875em;
+    font-weight: 300;
+    aspect-ratio: 1;
+    border: 1px solid lightcoral;
+  }
+}
+
+.card-example {
+  .cards {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5em -0.5em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example {
+    margin-top: 2em;
+  }
+
+  .card {
+    display: block;
+    padding: 1em;
+    border-radius: 0.5em;
+    background: linear-gradient(
+      to bottom,
+      rgb(0 0 255 / 2%),
+      rgb(0 0 255 / 7%)
+    );
+    border: 2px solid rgb(0 0 255 / 10%);
+    box-shadow: 0 0 1em rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0.5em;
+  }
+
+  [data-dark-mode="true"] .card {
+    background: linear-gradient(
+      to bottom,
+      rgb(170 170 239 / 20%),
+      rgb(91 91 228 / 10%)
+    );
+    border: 2px solid rgb(159 159 254 / 10%);
+  }
+
+  @media (width >= 38em) {
+    .card {
+      width: calc(50% - 1em);
+      flex: calc(50% - 1em) 0 0;
+    }
+  }
+
+  @media (width >= 61em) {
+    .card {
+      width: calc(33% - 3em);
+      flex: calc(33% - 3em) 0 0;
+    }
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  .date {
+    color: gray;
+    font-weight: 300;
+    font-size: 0.75em;
+    margin-bottom: 1em;
+  }
+
+  .description {
+    font-size: 0.875em;
+  }
+
+  .cards li::before {
+    display: none;
+  }
+}
+
+.list-example {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 300px;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75em;
+    background-color: white;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em rgb(0 0 0 / 10%);
+    font-size: 0.875em;
+  }
+
+  [data-dark-mode="true"] li {
+    background-color: var(--purple-md);
+  }
+
+  li::before {
+    display: none;
+  }
+
+  li button {
+    appearance: none;
+    border: none;
+    padding: none;
+    margin: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  li button svg {
+    width: 1.2em;
+    fill: red;
+  }
+
+  [data-dark-mode="true"] li button svg {
+    fill: rgb(244 67 67);
+  }
+}
+
+.juggle-example {
+  .balls {
+    aspect-ratio: 1;
+    margin: 2em auto;
+    width: 100%;
+    max-width: 15em;
+    position: relative;
+    padding: 0;
+    background: url(/90bcc3f7cb13fd228e3f.svg);
+    background-size: contain;
+    background-repeat: none;
+  }
+
+  ul.balls > li {
+    width: 4em;
+    height: 4em;
+    border-radius: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875em;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  .balls li::before {
+    display: none;
+    margin-bottom: 0;
+  }
+
+  .balls li:first-child {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 2em);
+  }
+
+  .balls li:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .balls li:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .actions {
+    margin-bottom: 1em;
+  }
+
+  .red {
+    background-color: #eb2e1d;
+  }
+
+  .blue {
+    background-color: #5411ef;
+  }
+
+  .green {
+    background-color: #4fd726;
+  }
+}
+
