@@ -50,10 +50,16 @@ const isCurrent = (id: string) => current.id === id;
     <ul class='accordion'>
       {{#each faq as |q|}}
         <li class='accordion-item' {{autoAnimate}}>
-          <div class='question' {{on 'click' (fn updateCurrent q.id)}}>
+          {{! template-lint-disable no-inline-styles style-concatenation }}
+          <div
+            class='question'
+            {{on 'click' (fn updateCurrent q.id)}}
+            role='button'
+          >
             {{q.question}}
           </div>
           {{#if (isCurrent q.id)}}
+            {{! template-lint-disable no-triple-curlies  }}
             <p class='answer'>{{{q.answer}}}</p>
           {{/if}}
         </li>

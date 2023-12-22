@@ -38,6 +38,7 @@ export default class ActualBoxesComponent extends Component {
         {{#each this.numbers as |number|}}
           <div
             class='box'
+            {{! template-lint-disable no-inline-styles style-concatenation }}
             style='background-color: {{colorFor number}}'
           >{{number}}</div>
         {{/each}}
