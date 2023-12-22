@@ -1,5 +1,5 @@
-import Application from 'ember-auto-animate/app';
-import config from 'ember-auto-animate/config/environment';
+import Application from 'auto-animate-with-ember/app';
+import config from 'auto-animate-with-ember/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

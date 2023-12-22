@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'ember-auto-animate',
+    modulePrefix: 'auto-animate-with-ember',
     environment,
     rootURL: '/',
     locationType: 'history',

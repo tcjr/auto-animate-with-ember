@@ -1,1 +1,7 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+.example {
+  margin-top: 10em;
+  padding-bottom: 10em;
+  border-bottom: 3px solid #ccc;
+}

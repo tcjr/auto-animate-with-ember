@@ -30,15 +30,17 @@ setInterval(() => {
 }, 600);
 
 <template>
-  <ul class='balls' {{autoAnimate duration=500}}>
-    {{#each balls as |color|}}
-      <li class={{color}}>{{color}}</li>
-    {{/each}}
-  </ul>
-  <div>
-    <button class='button button--alt' type="button" {{on 'click' toggle}}>
-      {{if juggler.isEnabled '🚫 Disable' '✅ Enable'}}
-      animations
-    </button>
+  <div class='juggle-example'>
+    <ul class='balls' {{autoAnimate duration=500}}>
+      {{#each balls as |color|}}
+        <li class={{color}}>{{color}}</li>
+      {{/each}}
+    </ul>
+    <div>
+      <button class='button button--alt' type='button' {{on 'click' toggle}}>
+        {{if juggler.isEnabled '🚫 Disable' '✅ Enable'}}
+        animations
+      </button>
+    </div>
   </div>
 </template>

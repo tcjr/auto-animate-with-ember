@@ -1,6 +1,6 @@
 /**
  * Type declarations for
- *    import config from 'ember-auto-animate/config/environment'
+ *    import config from 'auto-animate-with-ember/config/environment'
  */
 declare const config: {
   environment: string;

@@ -6,8 +6,8 @@
     // work with TypeScript.
     "baseUrl": ".",
     "paths": {
-      "ember-auto-animate/tests/*": ["tests/*"],
-      "ember-auto-animate/*": ["app/*"],
+      "auto-animate-with-ember/tests/*": ["tests/*"],
+      "auto-animate-with-ember/*": ["app/*"],
       "*": ["types/*"]
     }
   },

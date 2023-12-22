@@ -1,9 +1,9 @@
-import ExampleJuggle from 'ember-auto-animate/components/example-juggle';
-import ActualAccordion from 'ember-auto-animate/components/actual-accordion';
-import ExampleSort from 'ember-auto-animate/components/example-sort';
-import ActualCards from 'ember-auto-animate/components/actual-cards';
-import ActualList from 'ember-auto-animate/components/actual-list';
-import ActualBoxes from 'ember-auto-animate/components/actual-boxes';
+import ExampleJuggle from 'auto-animate-with-ember/components/example-juggle';
+import ActualAccordion from 'auto-animate-with-ember/components/actual-accordion';
+import ExampleSort from 'auto-animate-with-ember/components/example-sort';
+import ActualCards from 'auto-animate-with-ember/components/actual-cards';
+import ActualList from 'auto-animate-with-ember/components/actual-list';
+import ActualBoxes from 'auto-animate-with-ember/components/actual-boxes';
 
 import Component from '@glimmer/component';
 
