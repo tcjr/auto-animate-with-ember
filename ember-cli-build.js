@@ -16,5 +16,18 @@ module.exports = function (defaults) {
         package: 'qunit',
       },
     ],
+
+    packagerOptions: {
+      webpackConfig: {
+        module: {
+          rules: [
+            {
+              test: /\.(png|svg)$/,
+              type: 'asset/resource',
+            },
+          ],
+        },
+      },
+    },
   });
 };

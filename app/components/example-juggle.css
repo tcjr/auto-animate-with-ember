@@ -9,6 +9,10 @@
   background-repeat: none;
 }
 
+.balls {
+  background: url("/assets/images/triangle.svg");
+}
+
 ul.balls > li {
   width: 4em;
   height: 4em;
@@ -22,7 +26,7 @@ ul.balls > li {
   margin-bottom: 0;
 }
 
-.balls li:before {
+.balls li::before {
   display: none;
   margin-bottom: 0;
 }

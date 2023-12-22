@@ -60,8 +60,7 @@ export default class ActualListComponent extends Component {
           <li>
             <span>{{item}}</span>
             <button
-              aria-label='Remove Fruit'
-              {{on 'click' (fn this.remove item)}}
+              aria-label='Remove Fruit' type="button" {{on 'click' (fn this.remove item)}}
             >
               <IconRemove />
             </button>
@@ -70,11 +69,10 @@ export default class ActualListComponent extends Component {
 
       </ul>
 
-      <button class='button button--add button--alt' {{on 'click' this.add}}>+
+      <button class='button button--add button--alt' type="button" {{on 'click' this.add}}>+
         Add Fruit</button>
       <button
-        class='button button--random button--alt'
-        {{on 'click' this.randomize}}
+        class='button button--random button--alt' type="button" {{on 'click' this.randomize}}
       >Randomize</button>
     </div>
   </template>

@@ -60,12 +60,12 @@ export default class ActualCardsComponent extends Component {
           <br />
           (form here)
           <br />
-          <button {{on 'click' this.createCard}}>Create card</button>
+          <button type="button" {{on 'click' this.createCard}}>Create card</button>
 
         </div>
 
       {{else}}
-        <button class='button button--alt' {{on 'click' this.toggleForm}}>
+        <button class='button button--alt' type="button" {{on 'click' this.toggleForm}}>
           + Add Event
         </button>
       {{/if}}
