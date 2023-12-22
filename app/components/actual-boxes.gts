@@ -21,7 +21,7 @@ export default class ActualBoxesComponent extends Component {
 
   <template>
     <div class='example boxes-example'>
-      <div class='boxes' {{autoAnimate duration=500}}>
+      <div class='boxes' {{autoAnimate duration=5000}}>
         {{#each this.numbers as |number|}}
           <div class='box'>{{number}}</div>
         {{/each}}
@@ -30,7 +30,9 @@ export default class ActualBoxesComponent extends Component {
         class='button button--alt'
         type='button'
         {{on 'click' this.randomize}}
-      >Randomize</button>
+      >
+        Randomize
+      </button>
     </div>
   </template>
 }

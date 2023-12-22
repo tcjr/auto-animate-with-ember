@@ -36,7 +36,7 @@ setInterval(() => {
     {{/each}}
   </ul>
   <div>
-    <button {{on 'click' toggle}} class='button button--alt'>
+    <button class='button button--alt' type="button" {{on 'click' toggle}}>
       {{if juggler.isEnabled '🚫 Disable' '✅ Enable'}}
       animations
     </button>

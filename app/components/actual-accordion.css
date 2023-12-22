@@ -1,36 +1,42 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+.acordion-example {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-li {
-  display: block;
-  background-color: var(--ui-light);
-  border-radius: 0.5em;
-  overflow: hidden;
-}
-[data-dark-mode="true"] li {
-  background-color: var(--purple-d);
-}
+  li {
+    display: block;
+    background-color: var(--ui-light);
+    border-radius: 0.5em;
+    overflow: hidden;
+  }
 
-.question {
-  padding: 1em;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.question::before {
-  content: "Q";
-  font-size: 1.5em;
-  margin-right: 0.5em;
-  color: var(--primary);
-}
-[data-dark-mode="true"] .question::before {
-  color: var(--purple-m);
-}
-.answer {
-  margin: 0 1rem;
-  padding: 0 0 1rem 0;
-  font-size: 0.875em;
+  [data-dark-mode="true"] li {
+    background-color: var(--purple-d);
+  }
+
+  .question {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .question::before {
+    content: "Q";
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color: var(--primary);
+  }
+
+  [data-dark-mode="true"] .question::before {
+    color: var(--purple-m);
+  }
+
+  .answer {
+    margin: 0 1rem;
+    padding: 0 0 1rem;
+    font-size: 0.875em;
+  }
 }

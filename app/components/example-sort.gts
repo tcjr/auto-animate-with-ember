@@ -21,13 +21,15 @@ function sortDesc() {
 }
 
 <template>
-  <div>
-    <button type="button" {{on 'click' sortAsc}}>Sort A-Z ↑</button>
-    <button type="button" {{on 'click' sortDesc}}>Sort Z-A ↓</button>
+  <div class='example sort-example'>
+    <div>
+      <button type='button' {{on 'click' sortAsc}}>Sort A-Z ↑</button>
+      <button type='button' {{on 'click' sortDesc}}>Sort Z-A ↓</button>
+    </div>
+    <ul {{autoAnimate duration=2000}}>
+      {{#each items as |item|}}
+        <li>{{item}}</li>
+      {{/each}}
+    </ul>
   </div>
-  <ul {{autoAnimate duration=2000}}>
-    {{#each items as |item|}}
-      <li>{{item}}</li>
-    {{/each}}
-  </ul>
 </template>
