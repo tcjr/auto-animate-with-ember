@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "ember build --environment=production",
+    "deploy-pages": "ember build --environment=production && gh-pages -d dist",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
@@ -96,6 +97,7 @@
     "eslint-plugin-n": "^16.2.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-qunit": "^8.0.1",
+    "gh-pages": "^6.1.0",
     "loader.js": "^4.7.0",
     "prettier": "^3.0.3",
     "prettier-plugin-ember-template-tag": "^1.1.0",

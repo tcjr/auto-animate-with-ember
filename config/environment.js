@@ -4,7 +4,7 @@ module.exports = function (environment) {
   const ENV = {
     modulePrefix: 'auto-animate-with-ember',
     environment,
-    rootURL: '/',
+    rootURL: '/auto-animate-with-ember/', // trying this to get it to work with gh-pages
     locationType: 'history',
     EmberENV: {
       EXTEND_PROTOTYPES: false,
